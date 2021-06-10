@@ -10,7 +10,6 @@ function App() {
   const [cats, setCats] = useState ([]); 
   const [basket, setBasket] = useState ([]); 
 
-
   useEffect(() => {
     getCats();
   }, []);
@@ -42,7 +41,7 @@ return(
             return  (
                 <>
                     <Modal name={item.name} age={item.age} price={item.price} />        
-                    <h2 key={index}>name:{item.name} Age:{item.age} Price:{item.price}</h2>
+                    <h1 key={index}>name:{item.name} Age:{item.age} Price:{item.price}</h1>
                     <img src={item.url} alt="cat" width="100px" height="100px"></img>
                     <Button onClick={() => addToBasket(item)}>add to basket</Button>  
                     <Button onClick={() => logger()}>add to basket</Button>
