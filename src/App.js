@@ -35,7 +35,6 @@ function App() {
 
 return(
   <div>
-    
     <h1>Cats 4 lyf</h1>
     <p>We are the number 1 shop for cats.</p>
 
@@ -46,6 +45,7 @@ return(
                     <h2 key={index}>name:{item.name} Age:{item.age} Price:{item.price}</h2>
                     <img src={item.url} alt="cat" width="100px" height="100px"></img>
                     <Button onClick={() => addToBasket(item)}>add to basket</Button>  
+                    <Button onClick={() => logger()}>add to basket</Button>
                     <PopUp />                     
                 </>
             )
@@ -56,4 +56,3 @@ return(
 }
 
 export default App;
-
