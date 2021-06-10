@@ -40,7 +40,7 @@ return(
     {cats.map((item, index) => {
             return  (
                 <>
-                    <Modal name={item.name} age={item.age} price={item.price} />        
+                    <Modal cat={cat} />        
                     <h1 key={index}>name:{item.name} Age:{item.age} Price:{item.price}</h1>
                     <img src={item.url} alt="cat" width="100px" height="100px"></img>
                     <Button onClick={() => addToBasket(item)}>add to basket</Button>  
