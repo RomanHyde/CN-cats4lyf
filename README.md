@@ -18,4 +18,3 @@ https://trello.com/b/xesEzsMq/cats4lyf
 - Cat API - (place credit here)
 - Cat Ipsum - http://catipsum.com/
 - Background Image - (place credit here)
-# cn-cats4lyf
