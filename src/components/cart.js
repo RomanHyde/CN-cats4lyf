@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PopUpBasket from "./modalBasket"
+// import addToBasket from "../App"
 
-const Cart = ({basket, totalPrice}) => { 
+const Cart = ({basket, totalPrice, addToBasket, minusBasket}) => { 
     return(
     <StyledContainer>
          
             <StyledInfo>
-                <StyledP><b>Number of items in basket:</b> {basket.length}</StyledP>
+            {/* {props.basket.reduce((total,item) => total + (parseInt(item.price)*parseInt(item.ammountInBasket)), 0 )} */}
+                <StyledP><b>Number of items in basket:</b> {basket.reduce((total,item) => total + (parseInt(item.ammountInBasket)), 0)}</StyledP>
                 <StyledP><b>Total Price:</b> £{totalPrice}</StyledP>
-                <PopUpBasket basket={basket}/>   
+                <PopUpBasket basket={basket} addToBasket={addToBasket} minusBasket={minusBasket}/>   
                                 
             </StyledInfo>
          

@@ -30,10 +30,24 @@ function App() {
       setCats(data)
   }
 
-  const addToBasket = (item) => {    
-    setBasket([...basket,item])
+  const addToBasket = (item) => {   
+    // I'm going to assume that allthe cats have unique names.
+    if (!basket.some((basket) => basket.name === item.name)) {
+        item["ammountInBasket"] = 1
+        // item["totalItemPrice"] = item.price * item.ammountInBasket 
+        setBasket([...basket,item])
+    }
+    //Should i be directly editing basket?
+    basket.map(e => e.name === item.name?e.ammountInBasket = e.ammountInBasket + 1 : e)
+
     setTotalPrice(parseInt(totalPrice)+parseInt(item.price))
-    console.log(totalPrice)
+  }
+
+  const minusBasket = (item) => {
+
+    basket.map(e => e.name === item.name && e.ammountInBasket > 0? (e.ammountInBasket = e.ammountInBasket - 1, setTotalPrice(parseInt(totalPrice)-parseInt(item.price))): e)
+    setBasket([...basket])
+    
   }
 
 return(
@@ -43,11 +57,7 @@ return(
     <h3>We are the number 1 shop for cats.</h3>
     {/* </StyledHeader> */}
     
-    
-      <Cart basket={basket} totalPrice={totalPrice} />
-
-      
-    
+      <Cart basket={basket} totalPrice={totalPrice} addToBasket={addToBasket} minusBasket={minusBasket}/>
 
     {cats.map((item, index) => {
             return  (
