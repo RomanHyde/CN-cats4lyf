@@ -38,8 +38,10 @@ function App() {
 
 return(
   <StyledWrapper>
+    {/* <StyledHeader> */}
     <h1>Cats 4 lyf</h1>
     <h3>We are the number 1 shop for cats.</h3>
+    {/* </StyledHeader> */}
     
     
       <Cart basket={basket} totalPrice={totalPrice} />
@@ -71,5 +73,8 @@ const StyledWrapper = styled.div`
   // background-color: aqua;
 `;
 
+// const StyledHeader = styled.div`
+// background color: gray;
+// justify-content: center;`
 
 export default App;
