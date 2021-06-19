@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Modal } from 'react-bootstrap';
 import PopUp from './Modal';
 
+
 const Cat = ({item,index,addToBasket}) => { 
     return(
     <StyledContainer>
@@ -23,6 +24,7 @@ const Cat = ({item,index,addToBasket}) => {
     </StyledContainer> 
     ) 
 };
+
 
 const StyledContainer = styled.div`
     display: flex;    
