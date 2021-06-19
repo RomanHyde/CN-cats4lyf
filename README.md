@@ -15,6 +15,6 @@ https://trello.com/b/xesEzsMq/cats4lyf
 
 
 ## Credits:
-- Cat API - (place credit here)
+- Cat API - https://thecatapi.com/
 - Cat Ipsum - http://catipsum.com/
-- - Background Image - (place credit here)
+- Background Image - [Artwork](https://www.vecteezy.com/vector-art/621751-cartoon-cute-cat-sleeping-vector) by sawitree promphithukkul
