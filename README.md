@@ -14,8 +14,10 @@ Roman Hyde (RomanHyde), Mina Khosravi (Minakrv) and Lance Bookatz (lbookatz)
 https://trello.com/b/xesEzsMq/cats4lyf
 
 ## Styling:
-Original Styling by Lance and Roman
-[Figma Wire Frame and Restyle](https://www.figma.com/file/Jl6sqm2a04Gra3jjxrFoz0/Update-cats-4-lyf-layout?node-id=0%3A1) by Roman
+- Original Styling by Lance and Roman
+
+## Wireframe
+- [Figma Wire Frame and Restyle](https://www.figma.com/file/Jl6sqm2a04Gra3jjxrFoz0/Update-cats-4-lyf-layout?node-id=0%3A1) by Roman
 
 
 ## Credits:
